@@ -45,3 +45,8 @@ on boot
     chmod 0660 /sys/devices/soc/soc:fpc1020/wakeup_enable
     chown system system /sys/devices/soc/soc:fpc1020/fingerdown_wait
     chmod 0660 /sys/devices/soc/soc:fpc1020/fingerdown_wait
+
+service folio_daemon /vendor/bin/folio_daemon
+    class late_start
+    user root
+    group root
