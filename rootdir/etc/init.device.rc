@@ -46,14 +46,14 @@ on boot
     chown system system /sys/devices/soc/soc:fpc1020/fingerdown_wait
     chmod 0660 /sys/devices/soc/soc:fpc1020/fingerdown_wait
 
-service vendor.folio_daemon /vendor/bin/folio_daemon
+service folio_daemon /system/bin/folio_daemon
     class late_start
     user system
     group system
     disabled
 
 on property:init.svc.zygote=running
-    start vendor.folio_daemon
+    start folio_daemon
 
 on property:init.svc.zygote=stopped
-    stop vendor.folio_daemon
+    stop folio_daemon
