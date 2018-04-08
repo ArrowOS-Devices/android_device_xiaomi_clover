@@ -65,5 +65,9 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(DEVICE_PATH)/configs/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf
 
+# VNDK
+PRODUCT_PACKAGES += \
+    vndk-sp
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/clover/clover-vendor.mk)
