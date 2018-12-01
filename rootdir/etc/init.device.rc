@@ -49,7 +49,7 @@ on boot
 service folio_daemon /system/bin/folio_daemon
     class late_start
     user system
-    group system
+    group system uhid
     disabled
 
 on property:init.svc.zygote=running
