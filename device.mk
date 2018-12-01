@@ -55,7 +55,8 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    CarrierConfig
+    CarrierConfig \
+    Dialer
 
 # Sensors
 PRODUCT_COPY_FILES += \
