@@ -46,5 +46,8 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/recovery.fstab
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-04-01
 
+# SELinux
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
 # Inherit the proprietary files
 -include vendor/xiaomi/clover/BoardConfigVendor.mk
