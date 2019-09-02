@@ -27,6 +27,9 @@
 
 DEVICE_PATH := device/xiaomi/clover
 
+# Kernel
+TARGET_KERNEL_CONFIG := clover_defconfig
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-04-01
 
