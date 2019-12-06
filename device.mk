@@ -29,6 +29,9 @@ DEVICE_PATH := device/xiaomi/clover
 # Inherit device properties
 $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 
+# Setup dalvik vm configs
+$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1200
