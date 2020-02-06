@@ -30,6 +30,9 @@ DEVICE_PATH := device/xiaomi/clover
 # Kernel
 TARGET_KERNEL_CONFIG := clover_defconfig
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/recovery.fstab
+
 # Security patch level
 VENDOR_SECURITY_PATCH := 2019-04-01
 
