@@ -26,5 +26,10 @@ $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
 DEVICE_PATH := device/xiaomi/clover
 
+# Display calibration
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/display/qdcm_calib_data_NT51021_BOE_BOE.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_NT51021_BOE_BOE.xml \
+    $(DEVICE_PATH)/configs/display/qdcm_calib_data_NT51021_BOE_BOE10.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_NT51021_BOE_BOE10.xml
+
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/xiaomi/clover/clover-vendor.mk)
