@@ -29,6 +29,10 @@ DEVICE_PATH := device/xiaomi/clover
 # Inherit device properties
 $(call inherit-product, $(DEVICE_PATH)/properties.mk)
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1200
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
