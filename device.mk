@@ -47,6 +47,7 @@ PRODUCT_COPY_FILES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    init.device.rc \
     fstab.qcom
 
 # Keylayout
