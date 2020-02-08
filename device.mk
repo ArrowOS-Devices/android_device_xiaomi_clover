@@ -26,6 +26,9 @@ $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
 DEVICE_PATH := device/xiaomi/clover
 
+# Inherit device properties
+$(call inherit-product, $(DEVICE_PATH)/properties.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
