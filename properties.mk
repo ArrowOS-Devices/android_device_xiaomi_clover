@@ -27,7 +27,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.HAL3.enabled=1 \
     persist.camera.preview.ubwc=0 \
-    persist.camera.stats.test=5
+    persist.camera.stats.test=5 \
+    video.disable.ubwc=1
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
