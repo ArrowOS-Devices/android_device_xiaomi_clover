@@ -59,10 +59,6 @@ PRODUCT_PACKAGES += \
     init.device.rc \
     fstab.qcom
 
-# Keylayout
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl
-
 # RIL
 PRODUCT_PACKAGES += \
     CarrierConfig \
