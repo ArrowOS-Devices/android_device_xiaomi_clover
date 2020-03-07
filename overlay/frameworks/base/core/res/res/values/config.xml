@@ -22,10 +22,6 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- If true, the screen can be rotated via the accelerometer in all 4
-         rotations as the default behavior. -->
-    <bool name="config_allowAllRotations">true</bool>
-
     <!-- Whether WiFi display is supported by this device.
          There are many prerequisites for this feature to work correctly.
          Here are a few of them:
@@ -42,11 +38,6 @@
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">false</bool>
-
-    <!-- Indicate whether closing the lid causes the device to go to sleep and opening
-         it causes the device to wake up.
-         The default is false. -->
-    <bool name="config_lidControlsSleep">true</bool>
 
     <!-- Power Management: Specifies whether to decouple the auto-suspend state of the
          device from the display on/off state.
@@ -67,9 +58,6 @@
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
-
-    <!-- Whether device supports double tap to wake -->
-    <bool name="config_supportDoubleTapWake">true</bool>
 
     <!-- Enable video pause workaround when enabling/disabling the camera. -->
     <bool name="config_useVideoPauseWorkaround">false</bool>
@@ -172,42 +160,6 @@
         <item>3500</item>
         <item>4000</item>
     </integer-array>
-
-    <!-- Default list of files pinned by the Pinner Service -->
-    <string-array name="config_defaultPinnerServiceFiles">
-        <item>"/system/framework/arm64/boot-framework.oat"</item>
-        <item>"/system/framework/framework.jar"</item>
-        <item>"/system/framework/oat/arm64/services.odex"</item>
-        <item>"/system/framework/services.jar"</item>
-        <item>"/system/framework/arm64/boot.oat"</item>
-        <item>"/system/framework/arm64/boot-core-libart.oat"</item>
-        <item>"/system/priv-app/SystemUI/oat/arm64/SystemUI.vdex"</item>
-        <item>"/system/priv-app/SystemUI/oat/arm64/SystemUI.odex"</item>
-        <item>"/system/lib64/libsurfaceflinger.so"</item>
-        <item>/system/lib64/libRScpp.so</item>
-        <item>/system/lib64/libRS.so</item>
-        <item>/system/lib64/libRS_internal.so</item>
-        <item>/system/lib64/libbcinfo.so</item>
-        <item>/system/lib64/libRSDriver.so</item>
-        <item>/system/lib64/libRSCpuRef.so</item>
-        <item>/system/lib64/libblas.so</item>
-        <item>"/system/framework/arm64/boot-QPerformance.oat"</item>
-        <item>"/system/framework/arm64/boot-UxPerformance.oat"</item>
-        <item>"/apex/com.android.runtime/javalib/core-oj.jar"</item>
-        <item>"/apex/com.android.runtime/javalib/core-libart.jar"</item>
-        <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
-    </string-array>
-
-    <!-- List of files pinned by the Pinner Service with the apex boot image -->
-    <string-array name="config_apexBootImagePinnerServiceFiles">
-        <item>"/system/framework/framework.jar"</item>
-        <item>"/system/framework/services.jar"</item>
-        <item>"/system/framework/arm64/apex.oat"</item>
-        <item>"/system/framework/arm64/apex-core-libart.oat"</item>
-        <item>"/apex/com.android.runtime/javalib/core-oj.jar"</item>
-        <item>"/apex/com.android.runtime/javalib/core-libart.jar"</item>
-        <item>"/apex/com.android.media/javalib/updatable-media.jar"</item>
-    </string-array>
 
     <!-- Values for GPS configuration -->
     <string-array name="config_gpsParameters">
