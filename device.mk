@@ -57,6 +57,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     folio_daemon
 
+# HW crypto
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+
 # Init
 PRODUCT_PACKAGES += \
     init.device.rc \

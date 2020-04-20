@@ -27,6 +27,9 @@
 
 DEVICE_PATH := device/xiaomi/clover
 
+# Crypto
+TARGET_HW_DISK_ENCRYPTION := true
+
 # Kernel
 TARGET_KERNEL_CONFIG := clover_defconfig
 
