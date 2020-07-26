@@ -47,6 +47,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/recovery.fstab
 VENDOR_SECURITY_PATCH := 2019-04-01
 
 # SELinux
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Inherit the proprietary files
