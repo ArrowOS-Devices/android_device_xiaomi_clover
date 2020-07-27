@@ -39,7 +39,7 @@ TARGET_SCREEN_WIDTH := 1200
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-lineage
+    $(DEVICE_PATH)/overlay-arrow
 
 # Audio
 PRODUCT_COPY_FILES += \

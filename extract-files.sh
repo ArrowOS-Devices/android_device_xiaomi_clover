@@ -21,7 +21,7 @@ export DEVICE=clover
 export VENDOR=xiaomi
 export DEVICE_COMMON=sdm660-common
 
-DEVICE_BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+DEVICE_BLOB_ROOT="$ARROW_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 patchelf --remove-needed libandroid.so "$DEVICE_BLOB_ROOT"/vendor/lib/libFaceGrade.so
 
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
