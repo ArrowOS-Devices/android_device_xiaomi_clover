@@ -20,7 +20,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common Arrow stuff
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/evolution/config/common.mk)
 
 # Inherit from clover device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -29,10 +29,9 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := clover
 PRODUCT_CHARACTERISTICS := tablet
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := arrow_clover
+PRODUCT_NAME := evolution_clover
 PRODUCT_MODEL := MI PAD 4
 
-DEVICE_MAINTAINER := TH779
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_clover.mk
+    $(LOCAL_DIR)/evolution_clover.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_clover-user \
-    arrow_clover-userdebug \
-    arrow_clover-eng
+    evolution_clover-user \
+    evolution_clover-userdebug \
+    evolution_clover-eng
